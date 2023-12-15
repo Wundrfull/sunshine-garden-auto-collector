@@ -94,7 +94,7 @@ sunshine_click_count = 0
 loop_count = 0
 start_time = time.time()
 
-print("\nStarting Script: Sunshine Garden Auto Collector")
+print("\nSunshine Garden Auto Collector")
 print("Hold 'q' to quit")
 print("==============================================\n")
 
