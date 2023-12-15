@@ -57,10 +57,13 @@ def find_image_on_screen(template_path, threshold=0.8):
     return  pyautogui.locateOnScreen(template_path, confidence=0.8) 
 
 def click(x, y):
+    # Get the original mouse position
+    original_position = pyautogui.position()
     win32api.SetCursorPos((x,y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
     sleep_short()
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
+    pyautogui.moveTo(*original_position)
     
 def get_random_point_within_box(box, margin = 3):
     left, top, width, height = box
