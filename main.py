@@ -12,8 +12,8 @@ screen_width, screen_height = pyautogui.size()
 # Calculate the center of the screen
 center_x, center_y = screen_width // 2, screen_height // 2
 # Define a range around the center (e.g., within 100 pixels of the center)
-range_x = (center_x - 100, center_x + 100)
-range_y = (center_y - 100, center_y + 100)
+range_x = (center_x - 400, center_x + 400)
+range_y = (center_y - 400, center_y + 400)
 
 def random_center_click():
     # Generate a random coordinate within the defined range
