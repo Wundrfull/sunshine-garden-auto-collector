@@ -23,8 +23,6 @@ def random_center_click():
     # Click at the random coordinate
     pyautogui.click(random_x, random_y)
 
-
-
 def screen_capture(region=None):
     if region is not None:
         # Capture the region of the screen defined by the coordinates
@@ -53,7 +51,7 @@ def sleep_long():
     time.sleep(random.uniform(1.0, 1.5))
     
 def sleep_very_long():
-    time.sleep(random.uniform(5.0, 7.0))
+    time.sleep(random.uniform(3.0, 5.0))
     
 def find_image_on_screen(template_path, threshold=0.8):
     return  pyautogui.locateOnScreen(template_path, confidence=0.8) 
