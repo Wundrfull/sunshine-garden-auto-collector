@@ -64,7 +64,7 @@ def click(x, y):
     sleep_short()
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
     sleep_short()
-    pyautogui.moveTo(original_position)
+    pyautogui.moveTo(*original_position)
     
 def get_random_point_within_box(box, margin = 3):
     left, top, width, height = box
