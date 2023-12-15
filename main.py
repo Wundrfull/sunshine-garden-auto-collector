@@ -21,7 +21,7 @@ def random_center_click():
     random_y = random.randint(*range_y)
 
     # Click at the random coordinate
-    pyautogui.click(random_x, random_y)
+    click(random_x, random_y)
 
 def screen_capture(region=None):
     if region is not None:
