@@ -70,10 +70,11 @@ try:
         if keyboard.is_pressed('q'):
             break
         
-        random_sleep(3.0, 5.0)
+        random_sleep(2.0, 3.5)
         for template_path, stat_name in [(hearts_path, "heart"), (sunshine_path, "sunshine")]:
             if (image_location := find_image(template_path)) is not None:
                 random_sleep(1.0, 1.5)
+                print(f"+1 {stat_name}")
                 random_click_in_box(image_location)
 
                 # Update the respective counts directly
@@ -82,7 +83,6 @@ try:
                 elif stat_name == "sunshine":
                     sunshine_count += 1
 
-                print(f"+1 {stat_name}")
                 random_click_near_center(screen_width, screen_height)
 
         loop_count += 1
