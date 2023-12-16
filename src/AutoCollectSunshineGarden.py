@@ -71,14 +71,20 @@ try:
             break
         
         random_sleep(3.0, 5.0)
-        for template_path, stat_name, stat_count in [(hearts_path, "heart", heart_count), (sunshine_path, "sunshine", sunshine_count)]:
+        for template_path, stat_name in [(hearts_path, "heart"), (sunshine_path, "sunshine")]:
             if (image_location := find_image(template_path)) is not None:
                 random_sleep(1.0, 1.5)
                 random_click_in_box(image_location)
-                stat_count += 1
+
+                # Update the respective counts directly
+                if stat_name == "heart":
+                    heart_count += 1
+                elif stat_name == "sunshine":
+                    sunshine_count += 1
+
                 print(f"+1 {stat_name}")
                 random_click_near_center(screen_width, screen_height)
-        
+
         loop_count += 1
 
 except KeyboardInterrupt:
