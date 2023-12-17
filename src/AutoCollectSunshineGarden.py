@@ -80,10 +80,11 @@ try:
                 # Update the respective counts directly
                 if stat_name == "heart":
                     heart_count += 1
+                    random_click_near_center(screen_width, screen_height)
+                    
                 elif stat_name == "sunshine":
                     sunshine_count += 1
 
-                random_click_near_center(screen_width, screen_height)
 
         loop_count += 1
 
