@@ -1,4 +1,4 @@
-**DEPRECATED**
+**DEPRECATED AS EVENT HAS CONCLUDED**
 # E7 Sunshine Garden Auto Collector
 
 This script automates the task of collecting 'hearts' and 'sunshines' in E7 Sunshine event. It's designed to work with a screen resolution of 2560x1440p but can be adapted for other resolutions (Needs pics of sunshine/heart icons in your resolution).
